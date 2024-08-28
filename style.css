@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root{
+    --primary-color: #89fcb3;
+    --secondary-color: #e9fccf;
+    --background-color: #e9fccf;
+    --background-secondary: #fffff7;
+}              
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: var(--background-color);
+    font-family: "Inter", sans-serif;
+}
+
+.logo{
+    fill: var(--primary-color);
+    margin: 2%;
+}
+
+section{
+    margin: 2%;
+}
+
+.text-container{
+    height: 30vh;
+    margin-bottom: 1.5%;
+}
+.text-container input{
+    font-family: "Inter", sans-serif;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: var(--background-secondary);
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px 0px gray;
+}
+.buttons-container{
+    margin: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+button{
+    width: 42.5%;
+    height: 2.2em;
+    border-radius: 10px;
+}
+.primary-button{
+    background-color: var(--primary-color);
+    color: #0f0f0f;
+    box-shadow: 1px 1px 7px 0px gray;
+    border: none;
+}
+.secondary-button{
+    background-color: var(--secondary-color) ;
+    color: #0f0f0f;
+    box-shadow: 1px 1px 7px 0px gray;
+    border: 2px solid;
+    border-width: 3px;
+    border-color: var(--primary-color);
+}
+.ouput-container{
+    background-color: white;
+    margin-top: 5%;
+    padding: 5% 2%;
+    height: 35vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 3px 5px 0px gray;
+}
+.copiador-container{
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#copiador {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.texto-info1{
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    body {
+        margin: auto;
+        max-width: 600px;
+    }
+  }
+
+
+@media (min-width: 1250px) {
+    body {
+        margin: auto;
+        max-width: 750px;
+    }
+  }

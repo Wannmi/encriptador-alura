@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto - Alura Challenges ONE</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <header>
+        <img class="logo" src="/img/Logo.svg" alt="img">
+    </header>
+    <section class="encriptador">
+        <div>
+            <div class="text-container">
+                <input type="text" value="Type here" id="input" />
+            </div>
+            <p>Solo letras minusculas</p>
+            <div class="buttons-container">
+                <button class="primary-button" onclick="encriptar()">Encriptar</button>
+                <button class="secondary-button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="ouput-container">
+            <h3 class="texto-info1" id="texto1">Ningun mensaje fue encontrado</h3>
+            <p class="texto-info2" id="texto2">Ingresa el texto que desees encriptar o desencriptar.</p>
+        </div>
+        <div class="copiador-container">
+            <button class="primary-button" id="copiador" onclick="copia()">Copiar</button>
+        </div>
+    </section>
+
+</body>
+
+</html>
